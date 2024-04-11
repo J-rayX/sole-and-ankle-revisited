@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-
+import { QUERIES } from '../../constants';
 import { COLORS } from '../../constants';
 
 import SearchInput from '../SearchInput';
@@ -32,6 +32,10 @@ const Wrapper = styled.div`
   height: 40px;
   padding-left: 32px;
   padding-right: 32px;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    display: none;
+  }
 `;
 
 const MarketingMessage = styled.span`
